@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1511553677255-ba939e5537e0?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 2rem 3rem;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.score-board {
+    border: 2px solid #fff;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.user-label, .computer-label {
+    background-color: #605c5c;
+    padding: 10px 12px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.user-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -34px;
+}
+
+.computer-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -68px;
+}
+
+#user-score, #computer-score {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+}
+
+#user-score {
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#computer-score {
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.score-board > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fefefe;
+}
+
+.choices {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 30%;
+    padding: 20px 12px;
+    gap: 20px;
+}
+
+.choices button {
+    padding: 20px 24px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.rock {
+    background-color: #9f8e8e;
+}
+
+.rock:hover {
+    background-color: #787474;
+}
+
+.paper {
+    background-color: #f1eaea;
+}
+
+.paper:hover {
+    background-color: #fff;
+}
+
+.scissors {
+    background-color: #f7d9d9;
+}
+
+.scissors:hover {
+    background-color: #fec8c8;
+}
+
+.game-round-display {
+    margin-bottom: 20px;
+}
+
+.game-round-display h3 {
+    font-weight: bold;
+    color: #f45656;
+}
+
+.winner-display {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
